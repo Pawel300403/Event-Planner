@@ -1,0 +1,35 @@
+.eventList {
+    margin: 130px auto;
+    display: grid;
+    gap: 50px;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-content: center;
+    /* height: 100%; */
+}
+
+.home-container {
+    margin: auto;
+}
+
+.addEvent {
+    height: 40vh;
+    aspect-ratio: 1;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2vh;
+    box-shadow: 0 0 20px rgba(158, 158, 158, 0.3);
+}
+
+.addEvent img {
+    height: 18%;
+    aspect-ratio: 1;
+    transition: 0.5s;
+}
+
+.addEvent img:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}

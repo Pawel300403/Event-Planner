@@ -1,0 +1,171 @@
+.createLabsContainer {
+    padding-top: 60px;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+}
+
+.createLabsContainer>input {
+    display: none;
+}
+
+.createLabsContainer button {
+    width: 180px;
+    height: 50px;
+    background-color: #A4A4F7;
+    border-radius: 30px;
+    color: #35358E;
+    border: none;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 30px 10vw;
+    transition: 0.5s;
+}
+
+.createLabsContainer button:hover {
+    background-color: #35358E;
+    color: #A4A4F7;
+    cursor: pointer;
+}
+
+.table-container {
+    display: grid;
+    grid-template-columns: 2fr 140px 100px 100px 60px 1fr 3fr 40px;
+    row-gap: 5px;
+    max-width: 80vw;
+    max-height: 55vh;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    align-items: center;
+    margin: auto;
+    overflow-y: auto;
+}
+
+.header {
+    font-weight: bold;
+    background-color: #5f5d5d;
+    color: #D9D9D9;
+    padding: 10px;
+    text-align: center;
+    height: 60px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.footer {
+    grid-column: 1 / -1;
+    height: 50px;
+    background-color: #5f5d5d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    bottom: 0;
+    z-index: 1;
+    border-bottom-right-radius: 10px;
+}
+
+.footer img {
+    height: 40px;
+    aspect-ratio: 1;
+    transition: 0.3s;
+}
+
+.footer img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+#last {
+    border-top-right-radius: 10px;
+    grid-column: -1 / 7;
+}
+
+.delete-lab-btn {
+    margin: auto;
+    transition: 0.3s;
+}
+
+.delete-lab-btn:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.table-container textarea {
+    resize: vertical;
+    height: 60px;
+    margin: 0 6px;
+    background-color: #D9D9D9;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.table-container input,
+.table-container select {
+    height: 40px;
+    margin: 0 2px;
+    background-color: #D9D9D9;
+    border: none;
+    border-radius: 10px;
+}
+
+.table-container input {
+    padding-left: 10px;
+}
+
+/* Stylowanie samego paska przewijania */
+.table-container::-webkit-scrollbar {
+    width: 8px;
+    /* Cienki pasek pionowy */
+    height: 8px;
+    /* Cienki pasek poziomy (jeśli występuje) */
+}
+
+/* Stylowanie tła paska przewijania */
+.table-container::-webkit-scrollbar-track {
+    background: #f0f0f0;
+    /* Jasne, subtelne tło */
+    border-radius: 10px;
+    /* Zaokrąglone krawędzie tła paska */
+}
+
+/* Stylowanie uchwytu (thumb) */
+.table-container::-webkit-scrollbar-thumb {
+    background-color: #b0b0b0;
+    /* Subtelny szary kolor uchwytu */
+    border-radius: 10px;
+    /* Zaokrąglone krawędzie uchwytu */
+}
+
+/* Stylowanie uchwytu podczas interakcji (hover) */
+.table-container::-webkit-scrollbar-thumb:hover {
+    background-color: #888;
+    /* Ciemniejszy szary podczas hover */
+}
+
+.arrowButton {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    bottom: 6vh;
+    right: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: none;
+    background-color: #A4A4F7;
+}
+
+.arrowButton img {
+    height: 40px;
+    aspect-ratio: 1
+}
+
+.arrowButton:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}

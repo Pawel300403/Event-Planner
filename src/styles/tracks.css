@@ -1,0 +1,118 @@
+.tracksContainer {
+    padding-top: 60px;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+}
+
+.addTrackButton {
+    background-color: #D9D9D9;
+    
+    position: fixed;
+    height: 50px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    border: none;
+    font-weight: bold;
+    font-size: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 50px;
+    right: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: 0.3s;
+}
+
+.addTrackButton:hover {
+    height: 60px;
+    cursor: pointer;
+    bottom: 45px;
+    right: 45px;
+    font-size: 2.2em;
+}
+
+/* ------------ style do trasy ------------ */
+
+.trackWidget {
+    max-width: 60%;
+    background-color: #333333;
+    padding: 10px 20px 20px 20px;
+    border-radius: 40px;
+    justify-self: center;
+    min-width: 650px;
+    margin: 50px 0 25px 0;
+}
+
+.trackBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.trackBar>div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.trackBar button {
+    height: 45px;
+    aspect-ratio: 1;
+    margin: 0 5px;
+    border-radius: 50%;
+    border: none;
+}
+
+.trackBar button:hover {
+    background-color: #888888;
+    cursor: pointer;
+}
+
+.trackBar button  img{
+    height: 25px;
+    aspect-ratio: 1;
+}
+
+.trackBar a {
+    margin: 0 10px;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.trackWidget .trackList {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+
+.trackWidget .trackList div {
+    width: 200px;
+    height: fit-content;
+    min-height: 50px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.trackWidget #t1 {
+    background-color: #C4E1F6;
+}
+
+.trackWidget #t2 {
+    background-color: #D3EE98;
+}
+
+.trackWidget #t3 {
+    background-color: #EEEEEE;
+}
+
+.trackWidget #t4 {
+    background-color: #FFBD73;
+}

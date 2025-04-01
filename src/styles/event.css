@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Stick+No+Bills:wght@200..800&display=swap');
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.eventFont {
+    font-family: "Stick No Bills", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.eventContainer {
+    height: 40vh;
+    aspect-ratio: 1;
+    background-color: #ffffff;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 2vh;
+    box-shadow: 0 0 20px rgba(158, 158, 158, 0.3);
+    transition: 0.5s;
+}
+
+.eventContainer:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.eventContainer #d, #title{
+    font-size: 2.5em;
+}
+
+.eventContainer #dname, #msc {
+    font-size: 1.25em;
+}
+
+.eventContainer #time {
+    font-size: 0.9em;
+}
+
+.eventContainer #leftBox {
+    padding: 5px 5px 5px 15px;
+}
+
+.eventContainer #rightBox {
+    padding: 5px 15px 5px 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    border-left: 5px solid #D9D9D9;
+}
+
+.eventContainer #boxTitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.eventContainer #boxTitle > p {
+    text-align: center;
+    justify-self: center;
+
+    background: url('/images/about_the_eif.png');
+    background-size: cover;
+    background-position: center;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.eventContainer #box {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
